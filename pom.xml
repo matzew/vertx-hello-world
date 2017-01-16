@@ -75,9 +75,19 @@
             <goals>
               <goal>resource</goal>
               <goal>build</goal>
+              <goal>helm</goal>
             </goals>
           </execution>
         </executions>
+        <configuration>
+          <resources>
+            <labels>
+              <service>
+                <expose>true</expose>
+              </service>
+            </labels>
+          </resources>
+        </configuration>
       </plugin>
       <plugin>
         <groupId>org.skife.maven</groupId>
@@ -102,6 +112,7 @@
 
   <properties>
     <fabric8.generator.name>wessendorf/${project.artifactId}</fabric8.generator.name>
+    <vertx.config.webPort>8080</vertx.config.webPort>
   </properties>
 
 </project>
