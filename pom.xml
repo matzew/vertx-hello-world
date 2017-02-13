@@ -11,7 +11,7 @@
     <dependency>
       <groupId>io.vertx</groupId>
       <artifactId>vertx-core</artifactId>
-      <version>3.3.3</version>
+      <version>${version.vertx}</version>
     </dependency>
 
     <dependency>
@@ -23,7 +23,7 @@
     <dependency>
       <groupId>io.vertx</groupId>
       <artifactId>vertx-unit</artifactId>
-      <version>3.3.3</version>
+      <version>${version.vertx}</version>
       <scope>test</scope>
     </dependency>
 
@@ -110,6 +110,7 @@
 
   <properties>
     <fabric8.generator.name>wessendorf/${project.artifactId}:latest</fabric8.generator.name>
+    <version.vertx>3.4.0.Beta1</version.vertx>
   </properties>
 
 </project>
